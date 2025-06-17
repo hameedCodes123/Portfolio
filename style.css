@@ -1,0 +1,770 @@
+* {
+  margin: 0%;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 1, 27);
+  color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.header {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Domine", Times, serif, Courier, monospace;
+  border-bottom: 1px solid white;
+  background-color: rgb(6, 6, 49);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav {
+  margin: 0 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.right ul {
+  display: flex;
+  justify-content: center;
+}
+
+.right ul li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+.right li a {
+  text-decoration: none;
+  color: white;
+}
+.right li a:hover:not(.active) {
+  color: rgb(60, 144, 218);
+}
+.right .active {
+  color: rgb(60, 144, 218);
+}
+
+::placeholder{
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vh;
+  height: 89vh;
+}
+
+
+.leftCont {
+  position: relative;
+  height: 80vh;
+  width: 40%;
+  top: 12vh;
+  left: 12vh;
+}
+.rightCont {
+  height: 85vh;
+  width: 40%;
+  background: linear-gradient(45deg, rgb(1, 1, 27) 50%, #020024 50%);
+}
+
+.circle {
+  height: 70vh;
+  width: 35vw;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  top: 1.5rem;
+  box-shadow: 0 0 4rem rgba(2, 0, 36, 1), inset 0 0 3rem rgba(0, 212, 255, 1),
+    0 0 3rem rgba(0, 212, 255, 1);
+}
+
+.h1 {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 750;
+  padding-bottom: 0.75rem;
+}
+
+.objective {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.rightCont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 2s ease-in-out, border 2s;
+}
+.rightCont img:hover {
+  cursor: pointer;
+  opacity: 55%;
+  border: 5px solid whitesmoke;
+}
+
+.typedjs {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Domine", serif;
+  font-weight: 800;
+  color: rgb(9, 112, 222);
+}
+
+.btns {
+  margin-top: 3rem;
+  height: 3rem;
+  width: 8rem;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(1, 1, 27);
+  color: white;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: linear-gradient(
+      to left,
+      rgb(1, 1, 27) 50%,
+      rgb(255, 255, 255) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 1.2s ease-out;
+}
+
+.btn2 {
+  margin-left: 1rem;
+}
+
+.btns:hover {
+  background-color: white;
+  color: rgb(1, 1, 27);
+  cursor: pointer;
+  font-weight: 600;
+  background-position: left;
+  transform: scale(1.1);
+}
+
+.socialmedia {
+  width: 10%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  top: 110px;
+}
+
+.socialmedia img {
+  height: 6vh;
+  margin: 0.3rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #fff;
+}
+
+.socialmedia img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(60, 144, 218);
+  border: 2px solid rgb(60, 144, 218);
+}
+.socialmedia img:active {
+  transform: scale(0.8);
+}
+
+.line hr {
+  border: 0.5px solid white;
+  background-color: #fb0000;
+}
+
+.aboutMe::before {
+  display: block;
+  content: ' ';
+  height: 5em; 
+  margin-top: -5em; 
+  width: 100%;
+  visibility: hidden;
+}
+
+.aboutMe {
+  height: 100vh;
+  margin: 1vh 10vw 0 10vw;
+}
+
+.boxflex {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.contents {
+  margin-top: 1rem;
+  font-size: 1.2em;
+  text-align: justify;
+}
+.boxflex h1 {
+  font-weight: bolder;
+  font-size: 2.75rem;
+  font-family: "Domine", Times, serif, Courier, monospace;
+}
+span {
+  color: blue;
+}
+
+.boxflex h3 {
+  font-size: 2rem;
+}
+
+.boxflex img {
+  margin: 4%;
+  height: 14vw;
+  width: 18%;
+  border-radius: 50%;
+  border: 2px solid wheat;
+}
+.boxflex img:hover {
+  box-shadow: 0 0 4rem rgba(2, 0, 36, 1), inset 0 0 3rem rgba(0, 212, 255, 1),
+    0 0 3rem rgba(0, 212, 255, 1);
+  transition: box-shadow ease-in 1.5s;
+}
+
+.btn3 {
+  margin: 4vh 0 0 33vw;
+}
+.line1 hr {
+  border: 0.5px solid white;
+}
+
+.Education::before {
+  display: block;
+  content: ' ';
+  height: 6em; 
+  margin-top: -5em; 
+  width: 100%;
+  visibility: hidden;
+}
+
+.Education {
+  height: 90vh;
+  margin: 0 10vw 0 10vw;
+}
+.flx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edu {
+  height: 70vh;
+  width: 50%;
+  padding: 2rem;
+}
+
+.service {
+  height: 70vh;
+  width: 50%;
+  padding: 2rem;
+}
+
+.Education h1 {
+  text-align: center;
+  font-size: 3.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 750;
+  padding-bottom: 0.75rem;
+}
+
+.cmnBdr {
+  height: 60vh;
+  padding: 0 0 2rem 0;
+}
+
+.study {
+  margin: 0.5rem;
+  border: 2px solid rgb(39, 39, 239);
+  border-radius: 1em;
+  padding: 2rem;
+  background: linear-gradient(to left, rgb(1, 1, 27) 50%, rgb(3, 3, 72) 50%)
+    right;
+  background-size: 200%;
+  transition: 1s ease-out;
+}
+
+.study:hover {
+  cursor: pointer;
+  background-position: left;
+}
+.duration {
+  display: flex;
+}
+
+.duration span {
+  margin-left: 0.2em;
+}
+
+.duration img {
+  border-radius: 3px;
+  height: 17px;
+  width: 17px;
+}
+
+.serv {
+  margin: 0.75rem;
+  border: 2px solid rgb(39, 39, 239);
+  border-radius: 1em;
+  padding: 2rem;
+  background: linear-gradient(to left, rgb(1, 1, 27) 50%, rgb(3, 3, 72) 50%)
+    right;
+  background-size: 200%;
+  transition: 1s ease-out;
+}
+
+.serv:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+.skills::before {
+  display: block;
+  content: ' ';
+  height: 6em; 
+  margin-top: -6em; 
+  width: 100%;
+  visibility: hidden;
+}
+
+.skills {
+  height: 100vh;
+  margin: 5vh 10vw 0 10vw;
+  padding-bottom: 12vh;
+}
+.skills h1 {
+  text-align: center;
+  font-size: 3.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 750;
+  padding-bottom: 0.75rem;
+}
+
+.skillCont {
+  display: flex;
+}
+
+.coding {
+  height: 70vh;
+  width: 50%;
+  padding: 2rem;
+}
+
+.profession {
+  height: 70vh;
+  width: 50%;
+  padding: 2rem;
+}
+
+.contact h1 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 750;
+  padding-bottom: 0.75rem;
+}
+
+.skill-list {
+  height: 57vh;
+  width: 100%;
+  margin: 0.75rem;
+  border: 2px solid rgb(39, 39, 239);
+  border-radius: 1em;
+  padding: 1rem 1rem 0 0;
+  background: linear-gradient(to left, rgb(1, 1, 27) 50%, rgb(3, 3, 72) 50%)
+    right;
+  background-size: 200%;
+  transition: 1s ease-out;
+}
+
+.skill-list:hover {
+  background-position: left;
+}
+
+.skill-list ul {
+  padding-left: 1rem;
+}
+
+.skill-list ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.percntBx {
+  border: 2px solid blue;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  color: blue;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pctg {
+  color: #fff;
+}
+
+.pctgs {
+  padding: 0.35em;
+  background-color: rgb(233, 233, 233);
+  border-radius: 0.2em;
+}
+
+.pctg1 {
+  max-width: 90%;
+}
+
+.pctg2 {
+  max-width: 80%;
+}
+.pctg3 {
+  max-width: 75%;
+}
+.pctg4 {
+  max-width: 70%;
+}
+
+.pctg5 {
+  max-width: 79%;
+}
+.pctg6 {
+  max-width: 80%;
+}
+.pctg7 {
+  max-width: 65%;
+}
+
+.contact::before {
+  display: block;
+  content: ' ';
+  height: 5em; 
+  margin-top: -5em; 
+  width: 100%;
+  visibility: hidden;
+}
+
+.contact {
+  height: 100vh;
+  margin: 3vh 10vw 0 10vw;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9vh;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+}
+
+.input-form input {
+  margin: 0.5rem;
+  width: 23vw;
+  background: transparent;
+  border: 2px solid blue;
+  border-radius: 0.5em;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.big-box {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.big-box textarea {
+  height: 16rem;
+  width: 47vw;
+  border: 2px solid blue;
+  border-radius: 0.5em;
+  background: transparent;
+  color: #fff;
+  padding:1rem ;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
+
+.input-form input:focus,
+.big-box textarea:focus {
+  background: linear-gradient(to right, rgb(3, 3, 72) 50%, rgb(1, 1, 27) 50%)
+    left;
+  background-size: 200%;
+  transition: 1s ease-out;
+}
+
+.input-form input,
+.big-box textarea {
+  background-position: right;
+}
+
+.smbtBtn {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+
+.line2 hr {
+  border: 0.5px solid white;
+}
+
+.footer {
+  height: 8vh;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 1rem;
+  background-color: rgb(20, 20, 22);
+  /* flex-wrap: wrap; */
+}
+
+.footer p {
+  margin-left: 1em;
+  padding: 1.2em 0 0.5em 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.toparrow{
+  margin-left: 65%;
+}
+
+.toparrow img{
+  height: 4vh;
+  margin: 0.3rem;
+  margin-top: 0.9em;
+  border-radius: 15%;
+  border: 2px solid black;
+  background: linear-gradient(
+      to left,
+      
+      rgb(255, 255, 255) 50%,
+      rgb(20, 207, 232) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 1.2s ease-out;
+}
+
+.toparrow img:active {
+  transform: scale(0.5);
+}
+
+.toparrow img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-position: left;
+  border: 2px solid rgb(60, 144, 218);
+}
+
+ @media only screen and (min-width: 300px) and (max-width: 460px)  {
+  .line1{
+    margin-top: 2em;
+  }
+  nav {
+    margin: 0%;
+    padding: 3%;
+  }
+  .header .right {
+    display: none;
+  }
+  .h1 {
+    padding: 0%;
+    margin-left: 0%;
+    font-size: 1.25rem;
+  }
+  .container {
+    flex-direction: column;
+    padding-top: 0%;
+  }
+  .typedjs {
+    font-size: 1rem;
+  }
+  .leftCont {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 35%;
+    padding: 0 2rem 0 2rem;
+    position: static;
+    text-align: center;
+  }
+  .btns {
+    margin-top: 12vh;
+    font-size: 1rem;
+    width: 7.5rem;
+  }
+  .btn2 {
+    margin-left: 3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .rightCont {
+    display: none;
+  }
+  .socialmedia {
+    position: relative;
+    top: 2.5rem;
+    left: 5.8rem;
+  }
+  .socialmedia img {
+    height: 4.5vh;
+  }
+  .aboutMe {
+    height: 100%;
+  }
+  .aboutMe img {
+    height: 8rem;
+    width: 9rem;
+  }
+  .aboutMe h3 {
+    font-size: 1.5rem;
+  }
+  .contents {
+    text-align: center;
+  }
+  .btn3 {
+    margin: 3vh 0 0 11vh;
+  }
+
+  .Education {
+    height: 105%;
+    margin: 2vh 0 0 0;
+    padding: 0px;
+  }
+
+  .flx {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    margin: 0 9px 0 9px;
+    padding: 0px;
+  }
+  .edu {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    margin-top: 2rem;
+    padding: 0px;
+  }
+  .cmnBdr {
+    height: 46vh;
+    width: 100%;
+  }
+  .study {
+    margin: 1.5rem 0.5em 1.5rem 0.5em;
+    padding: 1rem 0.5em 1rem 0.5em;
+  }
+
+  .service {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    margin-top: 2rem;
+    padding: 0px;
+  }
+
+  .serv {
+    margin: 1.5rem 0.5em 1.5rem 0.5em;
+    padding: 1rem 0.5em 1rem 0.5em;
+  }
+  .skills {
+    height: 150%;
+    margin: 2vh 0 0 0;
+    padding: 0px;
+  }
+  .skillCont {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .coding{
+    height: 60vh;
+    width: 95vw;
+  }
+  .skill-list{
+    height: 90%;
+  }
+  .profession{
+    height: 60vh;
+    width: 95vw;
+  }
+  .contact{
+    height: 95%;
+    margin: 2vh 0 0 0;
+    padding: 2rem;
+  }
+  .myForm{
+    margin-top: 1rem;
+  }
+  .input-box{
+    display: inline;
+  }
+  .input-box input, .big-box .my-textarea{
+    width: 95%;
+  }
+  .big-box{
+    display: inline;
+  }
+  .smbtBtn{
+   position: relative;
+  top:-5rem;
+  }
+  .footer {
+    height: 13vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content:none;
+  }
+  .footer p{
+    padding: 1em;
+  }
+  .footer a{
+    height: 4vh;
+    width: 3vh;
+    justify-content: center;
+    margin-left: 19vh;
+  }
+} 
+
+@media (max-width:930px){
+  *{
+    margin: 0;
+  }
+  .header{
+    position: relative;
+  }
+  nav{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
